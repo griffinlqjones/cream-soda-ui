@@ -1,0 +1,23 @@
+.github {
+  &-StagingView-list {
+    background-color: @tree-view-background-color;
+    .is-selected {
+      border-radius: 1px;
+      border-width: 1px 0px;
+      border-style: solid;
+      border-color: @tree-view-border-color;
+    }
+  }
+  &-PrSelectionByBranch-cell {
+    background-color: @tree-view-background-color;
+  }
+  &-Accordion-header {
+    background-color: @tree-view-background-color;
+  }
+  &-RecentCommits-list {
+    background-color: @tree-view-background-color;
+    .github-RecentCommit-undoButton {
+      background-color: @base-background-color;
+    }
+  }
+}

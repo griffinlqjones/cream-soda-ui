@@ -1,0 +1,8 @@
+.can-gradient(@color-arg: @base-background-color) {
+  background-image: linear-gradient(
+    to right,
+    darken(@color-arg, 15%), 10%,
+    lighten(@color-arg, 2%), 35%,
+    @color-arg, 90%,
+    darken(@color-arg, 15%));
+}

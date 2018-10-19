@@ -1,0 +1,94 @@
+.welcome {
+  background-color: @secondary-background-color;
+  width: 100%;
+
+  // For Welcome tab NOT Welcome Guide tab
+  &:not(.is-guide) {
+    position: relative;
+    z-index: 0;
+    .can-gradient(@cream);
+    .welcome-container {
+      //green stripe
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 8%;
+        z-index: 0;
+        .green-stripe(50px, 100%, 4px);
+        .can-gradient(@green-mint);
+      }
+    }
+  }
+
+  .welcome-container {
+
+    .welcome-header {
+      position: relative;
+      z-index: 1;
+
+      .welcome-logo {
+        border: 10px solid @tree-view-background-color;
+        background-color: white;
+        border-radius: 100%;
+        max-width: 90%;
+        height: 200px;
+        padding: 10px;
+        margin-top: 50px;
+        overflow: visible;
+        color: black;
+      }
+
+      .welcome-title{
+
+      }
+    }
+    .welcome-panel {
+      background-color: @tree-view-background-color;
+      border: 4px solid @base-background-color;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    .welcome-footer {
+      background-color: white;
+      border-radius: 100%;
+      border: 3px solid @base-background-color;
+      width: min-content;
+      padding: 20px ;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+// background-image: linear-gradient(
+//   to right,
+//   darken(@cream, 15%), 10%,
+//   lighten(@cream, 2%), 35%,
+//   @cream, 90%,
+//   darken(@cream, 15%));
+
+// // top can stripe
+// &::before {
+//   content: '';
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   z-index: 0;
+//   height: 30px;
+//   min-width: 120%;
+//   background-color: #959595;
+//   background-image: linear-gradient(to top, @cream, 3%, #4d4d4e, 75%, #999999, 98%, #252525);
+// }
+// // bottom can stripe
+// &::after {
+//   content: '';
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   z-index: 0;
+//   height: 30px;
+//   min-width: 120%;
+//   background-color: #959595;
+//   background-image: linear-gradient(to bottom, @cream, 3%, #4d4d4e, 75%, #999999, 98%, #252525);
+// }

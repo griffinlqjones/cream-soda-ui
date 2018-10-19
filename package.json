@@ -1,0 +1,19 @@
+{
+  "name": "cream-soda-ui",
+  "theme": "ui",
+  "version": "0.0.0",
+  "description": "A cream soda-flavored UI theme for Atom",
+  "keywords": [
+    "ui",
+    "theme",
+    "cream-soda",
+    "red",
+    "cream",
+    "soda"
+  ],
+  "repository": "https://github.com/griffinlqjones/cream-soda-ui",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
